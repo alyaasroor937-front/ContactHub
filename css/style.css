@@ -3,10 +3,46 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
-
 .inter{
 font-family: "Inter", sans-serif;
-font-optical-sizing: auto;
+font-optical-sizing: auto;;
 font-style: normal;
+}
+.h3-nav{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    
+}
+.blue-hub{
+    color:#7F22FE ;
+}
+.fa-address-book{
+    background-color: #6134F9;
+}
+.p-nav{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #6A7282;
+}
+.bg-body-tertiary{
+    background-color: #FDFDFE !important;
+}
+.btn-primary{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.notes{
+    height: 60px !important;
+}
+.btn-footer{
+    background-color: #5437F7 !important;
+    height: 50px !important;
+}
+.btn-cancel{
+    background-color: #F3F4F6 !important;
+    color: black !important;
+    border-color: #6a72826e;
 }
