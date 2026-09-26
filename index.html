@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,19 +34,20 @@
 <!-- modal start -->
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btnnn me-2 btn-primary rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 + &nbsp; Add Contact
 </button>
 
-<!-- Modal -->
-
-
-
-<!-- end modal -->
         </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i></a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#"><img src="images/avatar-4 (1).jpg " alt="" class=" rounded-3" ></i></a>
         </li>
        
     </ul>
@@ -127,6 +129,67 @@
 </div>
 
  <!-- end model -->
+
+<main class="my-5 p-5">
+    <div class="container my-5">
+        <div class="row my-5">
+            <div class="col-md-4 col-12">
+                <div class="total p-3 rounded-3">
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                        <div><i class="fa-sharp fa-solid fa-users text-light rounded-3 p-3 bg-primary"></i></div>
+                        <div class="">
+                            <p class="mb-0 p-total">Total</p>
+                            <h2 class="mb-0 fs-4">0</h2>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="total p-3 rounded-3">
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                        <div><i class="fa-etch fa-solid fa-star text-light rounded-3 p-3 star-faviorit"></i></div>
+                        <div class="">
+                            <p class="mb-0 p-total">Favorites</p>
+                            <h2 class="mb-0 fs-4">0</h2>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           
+             <div class="col-md-4 col-12">
+                <div class="total p-3 rounded-3">
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                        <div><i class="fa-sharp fa-solid fa-heart-pulse text-light rounded-4 p-3 bg-danger"></i></div>
+                        <div class="">
+                            <p class="mb-0 p-total">Favorites</p>
+                            <h2 class="mb-0 fs-4">0</h2>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <h1 class="h1-contct">All Contacts</h1>
+    <p class="p-con">Manage and organize your 0 contacts</p>
+  
+<div class="input-group">
+  <span class="input-group-text bg-white border-end-0">
+    <i class="bi bi-search text-secondary"></i>
+  </span>
+  <input 
+    type="text" 
+    class="form-control border-start-0 ps-0" 
+    placeholder="Search by name, phone, or email...">
+</div>
+
+</main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="main.js"></script>

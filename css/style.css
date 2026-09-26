@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f5f7fc;
 }
 .inter{
 font-family: "Inter", sans-serif;
@@ -45,4 +46,64 @@ font-style: normal;
     background-color: #F3F4F6 !important;
     color: black !important;
     border-color: #6a72826e;
+}
+.btnnn{
+    background-color: #5638F6 !important;
+}
+img{
+    width: 37px !important;
+    height: 37px !important;
+}
+.total{
+    background-color: #FFFFFF;
+    height: 100px;
+    transition: all 0.2s;
+   
+}
+.total:hover{
+ box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.493);
+}
+.fa-users{
+    background-color: #1B68FE !important;
+}
+.p-total{
+    color: gray;
+}
+.star-faviorit{
+    background-color: #FF9500 !important;
+}
+.h1-contct{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.p-con{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: grey;
+}
+
+
+.input-group .form-control,
+.input-group .input-group-text {
+  border-radius: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-color: #e5e7eb;
+}
+
+.input-group .input-group-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group .form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+  border-color: #e5e7eb;
 }
