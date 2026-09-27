@@ -107,3 +107,39 @@ img{
   box-shadow: none;
   border-color: #e5e7eb;
 }
+.bg-dark{
+    background-color: rgba(128, 128, 128, 0.427) !important;
+}
+.h3-found{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+     color: gray;
+}
+.p-add{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: oklch(0.707 0.022 261.325);
+}
+.column-quick{
+    height: 140px !important;
+    background-color:#FFFFFF !important;
+}
+.quick{
+    width: 100%;
+}
+.p-nofav{
+    color: grey;
+}
+.text-secondary{
+    font-size: 10px !important;
+    line-height: 15px !important;
+    font-weight: 400 !important;
+}
+.p-total{
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+    color: black;
+}
