@@ -15,6 +15,9 @@ font-style: normal;
     font-weight: 700;
     
 }
+.navbar{
+    z-index: 100;
+}
 .blue-hub{
     color:#7F22FE ;
 }
@@ -143,3 +146,178 @@ img{
     font-weight: 600 !important;
     color: black;
 }
+
+
+
+/* ////////////////////////////////////////// */
+
+
+#contactsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 340px;
+    max-width: 100%;
+}
+
+.contact-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.avatar-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.avatar-red {
+    background: linear-gradient(135deg, #ff4d5e, #e02a3c);
+}
+
+.badge-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.badge-star {
+    top: -6px;
+    right: -6px;
+    color: #f5a623;
+}
+
+.badge-heart {
+    bottom: -6px;
+    right: -6px;
+    color: #e0245e;
+}
+
+.contact-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-name {
+    margin: 0;
+    font-weight: 700;
+    color: #2b2f38;
+}
+
+.contact-phone,
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4a4f5a;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.85rem;
+}
+
+.icon-blue { background: #dce9ff; color: #3b6fe0; }
+.icon-purple { background: #e6e0fb; color: #7c5cf0; }
+.icon-green { background: #d6f5e8; color: #1fa872; }
+
+.contact-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.tag {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag-work {
+    background: #ece5fc;
+    color: #7c5cf0;
+}
+
+.tag-emergency {
+    background: #fde3ec;
+    color: #e0245e;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 14px;
+}
+
+.actions-left,
+.actions-right {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    background: #f2f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.action-btn:hover {
+    background: #e5e6e9;
+}
+
+.action-call { color: #22b06b; }
+.action-mail { color: #7c5cf0; }
+.action-star { color: #f5a623; }
+.action-heart { color: #e0245e; }
+.action-edit { color: #4a4f5a; }
+.action-delete { color: #e04343; }
