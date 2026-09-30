@@ -10,6 +10,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -82,7 +83,7 @@
 </div>
 <div class="mb-3">
     <label for="phoneNumber">Phone Number<span class="text-danger">*</span></label>
-    <input type="number" class="form-control mt-2" id="phoneNumber" placeholder="e.g.,01012345678">
+    <input type="text" class="form-control mt-2" id="phoneNumber" placeholder="e.g.,01012345678">
 </div>
 <div class="mb-3">
     <label for="emailAddres">Email Address<span class="text-danger">*</span></label>
@@ -139,7 +140,7 @@
                         <div><i class="fa-sharp fa-solid fa-users text-light rounded-3 p-3 bg-primary"></i></div>
                         <div class="">
                             <p class="mb-0 p-total">Total</p>
-                            <h2 class="mb-0 fs-4">0</h2>
+                            <h2 id="totalCount" class="mb-0 fs-4">0</h2>
 
                         </div>
                     </div>
@@ -152,7 +153,7 @@
                         <div><i class="fa-etch fa-solid fa-star text-light rounded-3 p-3 star-faviorit"></i></div>
                         <div class="">
                             <p class="mb-0 p-total">Favorites</p>
-                            <h2 class="mb-0 fs-4">0</h2>
+                            <h2 id="favoritCount" class="mb-0 fs-4">0</h2>
 
                         </div>
                     </div>
@@ -165,8 +166,8 @@
                     <div class="d-flex justify-content-start align-items-center gap-3">
                         <div><i class="fa-sharp fa-solid fa-heart-pulse text-light rounded-4 p-3 bg-danger"></i></div>
                         <div class="">
-                            <p class="mb-0 p-total">Favorites</p>
-                            <h2 class="mb-0 fs-4">0</h2>
+                            <p class="mb-0 p-total">Emergency</p>
+                            <h2 id="emergencyCount" class="mb-0 fs-4">0</h2>
 
                         </div>
                     </div>
@@ -177,14 +178,15 @@
         </div>
     </div>
     <h1 class="h1-contct">All Contacts</h1>
-    <p class="p-con">Manage and organize your 0 contacts</p>
+    <p class="p-con">Manage and organize your <span id="contactsCount">0</span> contacts</p>
   
 <div class="input-group">
   <span class="input-group-text bg-white border-end-0">
     <i class="bi bi-search text-secondary"></i>
   </span>
   <input 
-    type="text" 
+    type="text"
+    id="searchInput" 
     class="form-control border-start-0 ps-0" 
     placeholder="Search by name, phone, or email...">
 </div>
@@ -258,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-5">
+                <div id="favoritesContainer" class="text-center mt-5">
                     <p class="p-nofav">No favorites yet</p>
                 </div>
             </div>
@@ -274,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-5">
+                <div id="emergencyContainer" class="text-center mt-5">
                     <p class="p-nofav">No emergency contacts</p>
                 </div>
             </div>

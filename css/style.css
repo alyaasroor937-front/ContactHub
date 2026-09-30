@@ -321,3 +321,23 @@ img{
 .action-heart { color: #e0245e; }
 .action-edit { color: #4a4f5a; }
 .action-delete { color: #e04343; }
+.mmm{
+    margin-top: -40px !important;
+    margin-left: 0;
+    transition-delay: all 0.3s ease;
+  
+   
+    width: 50% !important;
+}
+.avattter{
+    padding: 3px !important;
+   width: 7% !important;
+   height: 43px !important;
+   border-radius: 10px !important;
+
+}
+.mmm:hover{
+    border-radius: 10px !important;
+    border: 1px solid saddlebrown !important;
+    background-color: #FFFAEC !important;
+}
