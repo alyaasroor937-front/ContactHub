@@ -29,7 +29,7 @@ searchInput.oninput = function(){
 }
 saveContactBtn.onclick = function(){
     if (fullName.value === ""){
-        alert("Please Enter Your Name");
+        Swal.fire("Missing Name","please enter the ful name","warning");
         return;
     }
     if (phoneNumber.value === ""){
@@ -37,15 +37,15 @@ saveContactBtn.onclick = function(){
         return;
     }
     if(phoneNumber.value.length !==11){
-        alert("phone number must be 11 digits");
+        Swal.fire("Missing Name","please enter the phone Number","warning");
         return;
     }
     if (emailAddres.value === ""){
-        alert("please Enter your email");
+    Swal.fire("Missing Name","please enter the email Address","warning");
         return;
     }
     if(!emailAddres.value.includes("@")){
-        alert("please enter avalid email");
+        Swal.fire("Missing Name","please enter a @","warning");
         return;
     }
         var contact = {
@@ -59,7 +59,11 @@ saveContactBtn.onclick = function(){
             favorite:false,
             emergency : false,
         }
-        
+        if(globalindex !== undefined){
+    Swal.fire("Updated!", "Contact updated successfully.", "success");
+            } else {
+    Swal.fire("Added!", "Contact added successfully.", "success");
+}
         // contacts.push(contact);
         if(globalindex !== undefined){
             contacts[globalindex] = contact;
@@ -147,13 +151,29 @@ function displayContacts(contactsToDisplay){
     }
 }
 
-function deleteContact(id){
-Swal.fire({
-    title:"Delete Contact?"
-    text :"Are you sure you want delete this contact? This action cannot be undone. "
-
-})
+    function deleteContact(id){
+    Swal.fire({
+        title: "Delete Contact?",
+        text: "Are you sure you want to delete this contact? This action cannot be undone.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete it!",
+        cancelButtonText: "Cancel",
+        confirmButtonColor: "#e11d48"
+    }).then(function(result){
+        if(result.isConfirmed){
+            var index = contacts.findIndex(function(c){ return c.id === id; });
+            contacts.splice(index,1);
+            displayContacts(contacts);
+            updateStats();
+            displayFavorites();
+            displayEmergency();
+            saveContacts();
+            Swal.fire("Deleted!", "The contact has been deleted.", "success");
+        }
+    });
 }
+
 function editContact(id){
     var index = contacts.findIndex(function(c){return c.id === id;});
     var contact = contacts[index];
